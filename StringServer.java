@@ -1,8 +1,8 @@
 import java.io.IOException;
 import java.net.URI;
+import java.util.ArrayList;
+
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
     ArrayList<String> str = new ArrayList<String>();
   
     public String handleRequest(URI url) {
@@ -12,11 +12,11 @@ class Handler implements URLHandler {
             if (url.getPath().contains("/add")) {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
-                    paraLen = parameters.length();
-                    for(int i = 1; i<paraLen; i++){
-                      str.add(parameters[i]);
+                    int paraLen = parameters.length;
+                    for (int i = 1; i < paraLen; i++) {
+                        str.add(parameters[i]);
                     }
-                  return String.format("String appended by %s! It's now %s, ", str, str.toString());
+                    return String.format("String appended by %s! It's now %s", str, str.toString());
                 }
             }
             return "404 Not Found!";
