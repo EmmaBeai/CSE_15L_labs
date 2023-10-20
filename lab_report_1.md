@@ -1,6 +1,6 @@
 # Lab Report 0
 
-## The cd command
+## The `cd` command
 ![Image](lab_repo1_1.png)
 
 1. the "cd" with no arguments runs in the home directory, as shown in the screen shot (the directory is /home). It changes the working directory for the terminal to /home. 
