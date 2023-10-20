@@ -3,21 +3,47 @@
 ## The `cd` command
 ![Image](lab_repo1_1.png)
 
-1. the "cd" with no arguments runs in the home directory, as shown in the screen shot (the directory is /home). It changes the working directory for the terminal to /home. 
-2. the "cd" with a working directory as an argument runs in the working directory it used as arguments, in this example, the diretory is /home/lecture1, as it changes the working directory to /home/lecture1 as asked
-3. the "cd" with a file as and argument raised an error, since the cd cannot set a file as working directoy. As a file is not a directory, an error raised. As this is a following step of step 2, the working directory remains the same as step 2, which is still /home/lecture1
+### `cd` with no argument:
+1. Working Directory: /home
+2. Output (result): the result is not visible, and you will be "directed" to the /home directory, as you are already in the /home directory, this commend will have no impact
 
-## The ls command
-![Image](lab_repo1_2.png)
+### `cd`with a working directory as argument:
+1. Working Directory: /home
+2. Output (result): this commend will change the current working directory from /home to /home/lecture1
 
-1. the "ls" with no argument list the files and folders in the home directory, when we use the pwd to check the current working directory, we can see that the "ls" command does not change working directory, and the working directory is still "/home".
-2. the "ls" with a working directory named "/home/lecture1" list the files and folders in the lecture1 directory, when we use the pwd to check the current working directory, we can see that the "ls" command does not change working directory, and the working directory is still "/home".
-3. the "ls" with a file named "Hello.class" encounter an error, as the "ls" command list our the folders or files in a "path", when we use the pwd to check the current working directory, we can see that working directory remains the same, and the working directory is still "/home".
+### `cd` with a file name as argument
+1. Working Directory: /home
+2. Output (result): this commend will encounter an error, as we cannot set a file as working directory
 
-## The cat command
-![Image](lab_repo1_4.png)
-1. please see the screen-shot for info (I answered the question there)
 
-![Image](lab_repo1_3.png)
-2. the "cat" command encountered an error when in the case where it follows with a error "cat: /home/lecture1: Is a directory," which implying that this command cannot used with working directories as there is no "content" to be printed out in working directories. The path remained unchanged when we apply the code "pwd," we can see the working directory is still /home.
-3. the "cat" command print out the content in the file /home/lecture1/Hello.java, and when we open the file by hand, we can see the exact same content as shown here. The path remained unchanged when we apply the code "pwd," we can see the working directory is still /home.
+## The `ls` command
+<img width="661" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/bbf04ef0-69f0-439d-923c-745a344e3b92">
+
+### `ls` with no argument:
+1. Working Directory: /home
+2. Output (result): the "ls" with no argument list the files and folders in the current working directory, which is the /home directory
+
+### `ls`with a working directory (in this case /home/lecture1) as argument:
+1. Working Directory: /home
+2. Output (result): the "ls" with a working directory named "/home/lecture1" list the files and folders in the lecture1 directory
+
+### `ls` with a file name (the path for the file is /home/lecture1/Hello.java) as argument:
+1. Working Directory: /home/lecture1
+2. Output (result): Since Hello.java is a single file, the listing of files and folders in /home/lecture1/Hello.java is just Hello.java itself.
+
+
+## The `ls` command
+
+
+
+### `ls` with no argument:
+1. Working Directory: /home
+2. Output (result): the "ls" with no argument list the files and folders in the current working directory, which is the /home directory
+
+### `ls`with a working directory (in this case /home/lecture1) as argument:
+1. Working Directory: /home
+2. Output (result): the "ls" with a working directory named "/home/lecture1" list the files and folders in the lecture1 directory
+
+### `ls` with a file name (the path for the file is /home/lecture1/Hello.java) as argument:
+1. Working Directory: /home/lecture1
+2. Output (result): Since Hello.java is a single file, the listing of files and folders in /home/lecture1/Hello.java is just Hello.java itself.
