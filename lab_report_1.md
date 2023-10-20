@@ -1,7 +1,8 @@
-# Lab Report 0
+# Lab Report 1
 
 ## The `cd` command
-![Image](lab_repo1_1.png)
+<img width="484" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/16942337-a928-4bc3-a05f-be0a554397c1">
+
 
 ### `cd` with no argument:
 1. Working Directory: /home
@@ -32,18 +33,17 @@
 2. Output (result): Since Hello.java is a single file, the listing of files and folders in /home/lecture1/Hello.java is just Hello.java itself.
 
 
-## The `ls` command
+## The `cat` command
+<img width="459" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/536d5c4b-a2d0-443b-97b4-4f0aba7c314f">
 
-
-
-### `ls` with no argument:
+### `cat` with no argument:
 1. Working Directory: /home
-2. Output (result): the "ls" with no argument list the files and folders in the current working directory, which is the /home directory
+2. Output (result): the `cat` command is going to record your typing and copy them, this command will not end automatically without users interfere (in this case using Ctrl+C to end the command) 
 
-### `ls`with a working directory (in this case /home/lecture1) as argument:
+### `cat` with a working directory (in this case /home/lecture1) as argument:
 1. Working Directory: /home
-2. Output (result): the "ls" with a working directory named "/home/lecture1" list the files and folders in the lecture1 directory
+2. Output (result): the `cat` command is encountering with an error here as the method is designed to print the contents of (one or more) files, but /home/lecture1 is not a file
 
-### `ls` with a file name (the path for the file is /home/lecture1/Hello.java) as argument:
-1. Working Directory: /home/lecture1
-2. Output (result): Since Hello.java is a single file, the listing of files and folders in /home/lecture1/Hello.java is just Hello.java itself.
+### `cat` with a file name (the path for the file is /home/lecture1/README) as argument:
+1. Working Directory: /home
+2. Output (result): the `cat` command here prints out the content in the README file when provided it the correct path to that file.
