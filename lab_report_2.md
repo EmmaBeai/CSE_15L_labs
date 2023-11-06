@@ -30,11 +30,24 @@ when we add string "How are you" i.e. make the path /add-message?s=How are you
    4. the chatOutput is added a new String "2. How are you\n" and is now "1. Hello\n2. How are you\n"
 
 
-private key:
-<img width="554" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/3c8449e7-af37-4a34-aa34-aba39541e47a">
+## The Keys
+### private key:
+The path to the private key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer):
+<img width="462" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/4a8959dc-b8c0-426e-a781-5f790485ed44">
 
-public key:
-it seems that it is an not solvable error here with the public key:
-<img width="723" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/b6844de9-ff10-4191-b37f-3c2603155885">
+### public key:
+The path to the public key for your SSH key for logging into ieng6 (within your account on ieng6): 
+<img width="465" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/43af441a-20e1-4887-993b-d543917b9deb">
+<img width="424" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/7184c6c1-da80-4cd4-aa3a-72a796741445">
+
+### terminal interaction:
+<img width="820" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/d0621b57-36e9-47d8-be59-20e0180b705b">
+
+
+## Reflections
+I learned about the remote server in lab in week 2. From the lab, I know that there are three remote servers assigned to our lab class and by using ssh, we can get access to the server which is assigned to us individually. Although we cannot read the thing from the server directly, we can use command like cat, ls, pwd to see the directories and files stored in our remote server. In week 3, we learn to store the key of the remote server to a .pub file on our local computer, after adding the key to that public key path file, we do not need password anymore when logging back in our remote server using our own account.
+
+
+
 
 
