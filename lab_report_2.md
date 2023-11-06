@@ -42,6 +42,8 @@ The path to the public key for your SSH key for logging into ieng6 (within your 
 
 ### terminal interaction:
 <img width="820" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/d0621b57-36e9-47d8-be59-20e0180b705b">
+<img width="768" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/6d657534-d9f0-45aa-b063-7743a0aeb608">
+
 
 
 ## Reflections
