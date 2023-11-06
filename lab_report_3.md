@@ -24,8 +24,10 @@ public class LinkedListTests {
 }
 ```
 
+Symptom 1:
 <img width="944" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/687fce32-5c50-4d35-a1fa-f790c4c42e5d">
 An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -41,7 +43,10 @@ public class LinkedListTests {
     }
 }
 ```
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+
+Symptom 2:
+<img width="288" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/0fe6c874-7e02-442b-a40b-6d9437b49a50">
+
 The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 Briefly describe why the fix addresses the issue.
 
@@ -55,4 +60,4 @@ For example, we saw the -name option for find in class. For each of those option
 
 That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
 
-Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it. See the syllabus on Academic Integrity and how to cite sources like ChatGPT for this class.
+
