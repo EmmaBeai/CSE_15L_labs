@@ -11,11 +11,10 @@ when we add string "hello" i.e. make the path /add-message?s=Hello
 1. Method called: the handleRequest method in the StringHandler class is called
 2. Argument involved: in the handleRequest method, the relevant arguments are the URI url (this is the url that will be accessed), String chatOutput (this is a string which stores the information passed into the url) , and int index (this is the index of the information that has passed into the url)
 3. Changed values:
-   
-    a. the url is changed to the url of the server + /add-message?s=Hello
-    b. the String list params is assigned to value of list splitting the query, params[0] is now "s" and params[1] is now "Hello"
-    c. the index is increment by 1 (it is now 1)
-    d. the chatOutput is added a new String "1. Hello\n" 
+   a. the url is changed to the url of the server + /add-message?s=Hello
+   b. the String list params is assigned to value of list splitting the query, params[0] is now "s" and params[1] is now "Hello"
+   c. the index is increment by 1 (it is now 1)
+   d. the chatOutput is added a new String "1. Hello\n" 
 
 
 
