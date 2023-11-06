@@ -5,7 +5,9 @@
 
 ### Output_1: Add String "Hello"
 <img width="928" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/1ff51cdd-58d4-453e-92e4-b90e1cae4624">
+
 when we add string "hello" i.e. make the path /add-message?s=Hello
+
 1. Method called: the handleRequest method in the StringHandler class is called
 2. Argument involved: in the handleRequest method, the relevant arguments are the URI url (this is the url that will be accessed), String chatOutput (this is a string which stores the information passed into the url) , and int index (this is the index of the information that has passed into the url)
 3. Changed values: 
@@ -18,7 +20,9 @@ when we add string "hello" i.e. make the path /add-message?s=Hello
 
 ### Output_2: Add String "How are you"
 <img width="959" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/ceb8328f-91ca-4c4b-9cea-e4d23f483f10">
+
 when we add string "How are you" i.e. make the path /add-message?s=How are you
+
 1. Method called: the handleRequest method in the StringHandler class is called
 2. Argument involved: in the handleRequest method, the relevant arguments are the URI url (this is the url that will be accessed), String chatOutput (this is a string which stores the information passed into the url) , and int index (this is the index of the information that has passed into the url)
 3. Changed values: 
