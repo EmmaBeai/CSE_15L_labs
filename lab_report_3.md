@@ -5,6 +5,7 @@ Choose one of the bugs from week 4’s lab.
 Provide:
 
 A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -22,6 +23,7 @@ public class LinkedListTests {
     }
 }
 ```
+
 <img width="944" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/687fce32-5c50-4d35-a1fa-f790c4c42e5d">
 An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
 ```
