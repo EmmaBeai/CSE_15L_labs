@@ -48,5 +48,28 @@ The symptom, as the output of running the tests (provide it as a screenshot of r
 The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 Briefly describe why the fix addresses the issue.
 
+This is the "Before Code" (buggy one from ArrayExamples.java):
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+This is the "After Fixing Code":
+```
+static void reverseInPlace(int[] arr) {
+    for (int i = 0; i < arr.length / 2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - i - 1] = temp;
+    }
+```
+Reasoning for why the fix address the issue:
+The buggy code has bug since it incorrectly overwrites the elements in the provided array. In each loop i, the element in position i got replaced by the element in position length-i-1, but the element in position i is never stored. Therefore, I fix the code by swapping the elements in position i and position length-i-1, and considering that up to position length/2, every element in the array has been swapped once, and repeating this process will undo the swapping, the for loop thus ends at i < arr.length/2
 
+
+
+# Part II
+The command I picked for researching in part II is command `find`
 
