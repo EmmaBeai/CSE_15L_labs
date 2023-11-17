@@ -72,4 +72,43 @@ The buggy code has bug since it incorrectly overwrites the elements in the provi
 
 # Part II
 The command I picked for researching in part II is command `find`
+## first option:
+`find -type t`
+from the manual (using man find)
+```
+-type t
+             True if the file is of the specified type.  Possible file types are as follows:
+
+             b       block special
+             c       character special
+             d       directory
+             f       regular file
+             l       symbolic link
+             p       FIFO
+             s       socket
+```
+### example 1:
+<img width="523" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/7c954ad5-9c30-4f66-b7fd-6831d4bad65e">
+displays all file in the /technical/biomed folder since this finding command only asked for the type to be file but not specific name of file.
+
+### example 2:
+<img width="463" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/e6b41a37-5772-4880-a76c-f54907952cc2">
+displays all the directory under the given path.
+
+
+## second option:
+`find -name`
+from the manual (using man find)
+```
+-name pattern
+    True if the last component of the pathname being examined matches pattern.  Special shell pattern matching characters
+    (“[”, “]”, “*”, and “?”) may be used as part of pattern.  These characters may be matched explicitly by escaping them
+    with a backslash (“\”).
+```
+
+### example 1:
+<img width="573" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/08272894-100e-4bf7-adc9-30a8e0bb215c">
+this command displays all the txt file under the /technical/biomed with "1471" containd in the file name
+
+### example 2:
 
