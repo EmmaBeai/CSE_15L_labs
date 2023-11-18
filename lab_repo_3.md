@@ -90,7 +90,7 @@ from the manual (using man find)
 #### Example 1: `find ./technical/biomed -type f`
 <img width="523" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/7c954ad5-9c30-4f66-b7fd-6831d4bad65e">
 
-displays all file in the /technical/biomed folder since this finding command only asked for the type to be file but not specific name of file.
+displays all file in the `/technical/biomed` folder since this finding command only asked for the type to be file but not specific name of file.
 
 #### Example 2: `find ./technical -type d`
 <img width="463" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/e6b41a37-5772-4880-a76c-f54907952cc2">
@@ -111,13 +111,13 @@ from the manual (using man find)
 #### Example 1: `find ./technical/biomed -name "*1471*.txt"`
 <img width="573" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/08272894-100e-4bf7-adc9-30a8e0bb215c">
 
-this command displays all the txt file under the /technical/biomed with "1471" containd in the file name
+this command displays all the txt file under the `/technical/biomed` with "1471" containd in the file name
 
 
 #### Example 2: `find ./technical/biomed  -name "*rr*.txt" -o -name "*cc*.txt"`
 <img width="729" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/82ba6b98-ba31-4866-80da-140753bc8784">
 
-this command display the result using `-name` as well as the `-o` after the command `find`. the `-o` after the `-name` helps to find all .txt file in the /technical/biomed directory with name containing "rr" or "cc" in the file name. 
+this command display the result using `-name` as well as the `-o` after the command `find`. the `-o` after the `-name` helps to find all .txt file in the `/technical/biomed` directory with name containing "rr" or "cc" in the file name. 
 
 
 
@@ -136,7 +136,7 @@ from the manual (using man find)
 
 Considering the difficulty to display the result of delete directly, I use three command to show the result of deletion:
 
-1. `find ./technical/government/Media -iname "*law*.txt"`: (the -iname finds all file with name "law" contained by considering both the upper or lower letters). We use this line to show what was originally in the ./technical/government/Media with desired name
+1. `find ./technical/government/Media -iname "*law*.txt"`: (the -iname finds all file with name "law" contained by considering both the upper or lower letters). We use this line to show what was originally in the `./technical/government/Media` with desired name
 2. `find ./technical/government/Media -iname "*law*.txt" -delete`: we then use the command containing `-delete` to delete all the files display in step one
 3. `find ./technical/government/Media -iname "*law*.txt"`: we call step one again to see if we sucessfully delete the files, this time it does not show up anything, means the deletion is sucessful.
 
@@ -144,7 +144,7 @@ Considering the difficulty to display the result of delete directly, I use three
 #### Example 2: `find ./technical -name "emptyDirectoryForTesting" -delete`
 <img width="688" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/7b1348f7-5b91-499c-bac0-593b681ff373">
 
-Although `rm -d` command is more common when we need to delete a directory, we can still use the `-delete` option after the `find` command to delete empty directories. As there is no empty directories originally in the ./technical directory, we need to make one to test this code
+Although `rm -d` command is more common when we need to delete a directory, we can still use the `-delete` option after the `find` command to delete empty directories. As there is no empty directories originally in the `./technical directory`, we need to make one to test this code
 
 1. `mkdir ./technical/emptyDirectoryForTesting`: make an empty directory in the ./technical directory
 2. `ls ./technical`: check existing files and directories under the ./technical directory, we can see the emptyDirectoryForTesting exist.
@@ -163,7 +163,7 @@ from the manual (using man find)
 #### Example 1: `find ./technical/plos -type f ! -regex '.*pmed.*'`
 <img width="631" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/df54dd14-45cf-4268-b7a8-3ba005506d3b">
 
-the directory ./technical/plos originally contains .txt file contains string either "journal" or "pmed" indicating the source of the .txt file. we use the negation of the `-regex` method here to find the file which does NOT contains the string "pmed" in its name
+the directory `./technical/plos` originally contains .txt file contains string either "journal" or "pmed" indicating the source of the .txt file. we use the negation of the `-regex` method here to find the file which does NOT contains the string "pmed" in its name
 
 
 #### Example 2: `find ./technical/biomed -type f ! -regex ".*[34].*"`
@@ -175,5 +175,5 @@ This one is a bit tricky if only looking at the inbuilt manual for `find -regex`
 
 According to ChatGPT, if I want to find file names excluding the file containing either 3 or 4, I need to use ".*[34]*." to do the task. Therefore, the ".*[]*." serves as a list of elements that need to be noticed by the `-regex` method if showing up in the name.
 
-As above mention, this command line find all files under ./technical/biomed except for those contains integer 3 or 4 within the file name.
+As above mention, this command line find all files under `./technical/biomed` except for those contains integer 3 or 4 within the file name.
 
