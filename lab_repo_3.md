@@ -120,18 +120,24 @@ from the manual (using man find)
 this command displays all the txt file under the /technical/biomed with "1471" containd in the file name
 
 
-### example 2:
+### example 2: `find ./technical/biomed  -name "*rr*.txt" -o -name "*cc*.txt"`
 <img width="729" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/82ba6b98-ba31-4866-80da-140753bc8784">
-
-`find ./technical/biomed  -name "*rr*.txt" -o -name "*cc*.txt"`
 
 this command display the result using `-name` as well as the `-o` after the command `find`. the `-o` after the `-name` helps to find all .txt file in the /technical/biomed directory with name containing "rr" or "cc" in the file name. 
 
 
 
-## third option: `find -size`
+## third option: `find -delete`
+from the manual (using man find)
+···
+-delete
+    Delete found files and/or directories.  Always returns true.  This executes from the current working directory as find
+    recurses down the tree.  It will not attempt to delete a filename with a “/” character in its pathname relative to “.”
+    for security reasons.  Depth-first traversal processing is implied by this option.  The -delete primary will fail to
+    delete a directory if it is not empty.  Following symlinks is incompatible with this option.
+···
 
-### example 1:
+### example 1: 
 
 
 
