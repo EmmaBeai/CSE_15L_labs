@@ -72,7 +72,7 @@ The buggy code has bug since it incorrectly overwrites the elements in the provi
 
 # Part II
 The command I picked for researching in part II is command `find`
-## first option: `find -type t`
+## First Option: `find -type t`
 from the manual (using man find)
 
 ```
@@ -87,18 +87,18 @@ from the manual (using man find)
              p       FIFO
              s       socket
 ```
-#### example 1: `find ./technical/biomed -type f`
+#### Example 1: `find ./technical/biomed -type f`
 <img width="523" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/7c954ad5-9c30-4f66-b7fd-6831d4bad65e">
 
 displays all file in the /technical/biomed folder since this finding command only asked for the type to be file but not specific name of file.
 
-#### example 2: `find ./technical -type d`
+#### Example 2: `find ./technical -type d`
 <img width="463" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/e6b41a37-5772-4880-a76c-f54907952cc2">
 
 displays all the directory under the given path.
 
 
-## second option: `find -name`
+## Second Option: `find -name`
 from the manual (using man find)
 
 ```
@@ -108,20 +108,20 @@ from the manual (using man find)
     with a backslash (“\”).
 ```
 
-#### example 1: `find ./technical/biomed -name "*1471*.txt"`
+#### Example 1: `find ./technical/biomed -name "*1471*.txt"`
 <img width="573" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/08272894-100e-4bf7-adc9-30a8e0bb215c">
 
 this command displays all the txt file under the /technical/biomed with "1471" containd in the file name
 
 
-#### example 2: `find ./technical/biomed  -name "*rr*.txt" -o -name "*cc*.txt"`
+#### Example 2: `find ./technical/biomed  -name "*rr*.txt" -o -name "*cc*.txt"`
 <img width="729" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/82ba6b98-ba31-4866-80da-140753bc8784">
 
 this command display the result using `-name` as well as the `-o` after the command `find`. the `-o` after the `-name` helps to find all .txt file in the /technical/biomed directory with name containing "rr" or "cc" in the file name. 
 
 
 
-## third option: `find -delete`
+## Third Option: `find -delete`
 from the manual (using man find)
 ···
 -delete
@@ -131,9 +131,25 @@ from the manual (using man find)
     delete a directory if it is not empty.  Following symlinks is incompatible with this option.
 ···
 
-#### example 1: 
+#### Example 1: `find ./technical/government/Media -iname "*law*.txt" -delete`
+<img width="715" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/6511d821-3dd3-4877-b4b3-27e73e1bc537">
+
+Considering the difficulty to display the result of delete directly, I use three command to show the result of deletion:
+
+1. `find ./technical/government/Media -iname "*law*.txt"`: (the -iname finds all file with name "law" contained by considering both the upper or lower letters). We use this line to show what was originally in the ./technical/government/Media with desired name
+2. `find ./technical/government/Media -iname "*law*.txt" -delete`: we then use the command containing `-delete` to delete all the files display in step one
+3. `find ./technical/government/Media -iname "*law*.txt"`: we call step one again to see if we sucessfully delete the files, this time it does not show up anything, means the deletion is sucessful.
 
 
+#### Example 2: `find ./technical -name "emptyDirectoryForTesting" -delete`
+<img width="688" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/7b1348f7-5b91-499c-bac0-593b681ff373">
 
-#### example 2:
+Although `rm -d` command is more common when we need to delete a directory, we can still use the `-delete` option after the `find` command to delete empty directories. As there is no empty directories originally in the ./technical directory, we need to make one to test this code
 
+1. `mkdir ./technical/emptyDirectoryForTesting`: make an empty directory in the ./technical directory
+2. `ls ./technical`: check existing files and directories under the ./technical directory, we can see the emptyDirectoryForTesting exist.
+3. `find ./technical -name "emptyDirectoryForTesting" -delete`: use this command to delete it
+4. `ls ./technical`: verify it again, we can see that it is disappeared.
+
+
+## Forth Option:
