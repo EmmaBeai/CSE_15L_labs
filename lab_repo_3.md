@@ -152,4 +152,28 @@ Although `rm -d` command is more common when we need to delete a directory, we c
 4. `ls ./technical`: verify it again, we can see that it is disappeared.
 
 
-## Forth Option:
+## Fourth Option: `find -regex`
+from the manual (using man find)
+···
+-regex pattern
+    True if the whole path of the file matches pattern using regular expression.  To match a file named “./foo/xyzzy”, you
+    can use the regular expression “.*/[xyz]*” or “.*/foo/.*”, but not “xyzzy” or “/foo/”.
+···
+
+#### Example 1: `find ./technical/plos -type f ! -regex '.*pmed.*'`
+<img width="631" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/df54dd14-45cf-4268-b7a8-3ba005506d3b">
+
+the directory ./technical/plos originally contains .txt file contains string either "journal" or "pmed" indicating the source of the .txt file. we use the negation of the `-regex` method here to find the file which does NOT contains the string "pmed" in its name
+
+
+#### Example 2: `find ./technical/biomed -type f ! -regex ".*[34].*"`
+<img width="721" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/e8f68fac-73de-4018-9087-a20f52486779">
+
+This one is a bit tricky if only looking at the inbuilt manual for `find -regex`, the manual does not sepcify the use for the format ".*[]*.", so I asked ChatGPT for a more detailed answer:
+
+<img width="876" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/831b4fed-51b2-43bd-9208-6b7e9bf7076e">
+
+According to ChatGPT, if I want to find file names excluding the file containing either 3 or 4, I need to use ".*[34]*." to do the task. Therefore, the ".*[]*." serves as a list of elements that need to be noticed by the `-regex` method if showing up in the name.
+
+As above mention, this command line find all files under ./technical/biomed except for those contains integer 3 or 4 within the file name.
+
