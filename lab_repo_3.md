@@ -72,8 +72,7 @@ The buggy code has bug since it incorrectly overwrites the elements in the provi
 
 # Part II
 The command I picked for researching in part II is command `find`
-## first option:
-`find -type t`
+## first option: `find -type t`
 from the manual (using man find)
 
 ```
@@ -103,8 +102,7 @@ displays all file in the /technical/biomed folder since this finding command onl
 displays all the directory under the given path.
 
 
-## second option:
-`find -name`
+## second option: `find -name`
 from the manual (using man find)
 
 ```
@@ -131,8 +129,8 @@ this command display the result using `-name` as well as the `-o` after the comm
 
 
 
-## third option:
-`find 
+## third option: `find -size`
+
 ### example 1:
 
 
