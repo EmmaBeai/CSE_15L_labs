@@ -88,11 +88,13 @@ from the manual (using man find)
              s       socket
 ```
 ### example 1:
+`find ./technical/biomed -type f`
 <img width="523" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/7c954ad5-9c30-4f66-b7fd-6831d4bad65e">
 
 displays all file in the /technical/biomed folder since this finding command only asked for the type to be file but not specific name of file.
 
 ### example 2:
+`find ./technical -type d`
 <img width="463" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/e6b41a37-5772-4880-a76c-f54907952cc2">
 
 displays all the directory under the given path.
@@ -109,9 +111,25 @@ from the manual (using man find)
 ```
 
 ### example 1:
+`find ./technical/biomed -name "*1471*.txt"`
 <img width="573" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/08272894-100e-4bf7-adc9-30a8e0bb215c">
 
 this command displays all the txt file under the /technical/biomed with "1471" containd in the file name
+
+
+### example 2:
+`find ./technical/biomed  -name "*rr*.txt" -o -name "*cc*.txt"`
+<img width="729" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/82ba6b98-ba31-4866-80da-140753bc8784">
+
+this command display the result using `-name` as well as the `-o` after the command `find`. the `-o` after the `-name` helps to find all .txt file in the /technical/biomed directory with name containing "rr" or "cc" in the file name. 
+
+
+
+## third option:
+`find 
+### example 1:
+
+
 
 ### example 2:
 
