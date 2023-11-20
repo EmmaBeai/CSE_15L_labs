@@ -77,9 +77,12 @@ we just runned the `bash` command needed for this step in step 6 (2 steps before
 
 <img width="485" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/867837bd-722d-4213-b2f9-6d9a981645b9">
 
+
 <img width="506" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/c2c77c96-939f-4ba1-b47e-28101a79d3e3">
 
+
 <img width="499" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/a19be8ce-7ea5-4ddc-8f78-f7b3345bca8f">
+
 
 key pressed and explanation:
 
