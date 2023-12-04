@@ -189,7 +189,6 @@ public class myQueue{
     }
 }
 ```
-
 3. The full command line (or lines) you ran to trigger the bug
 
 ```
@@ -209,7 +208,6 @@ public int dequeue(){
         }
     }
 ```
-
 4. A description of what to edit to fix the bug: see student's last response.
 
 ## Part 2 - Reflection:
