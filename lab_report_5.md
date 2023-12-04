@@ -112,12 +112,15 @@ public class myQueueTest{
     }
 }
 ```
+
 <br> In the above test, I first tested again to make sure the `enqueue` method works well so that I have three elements in the list to start with (in this case, they are 1, 2, and 3). And I start to remove the *1* and *2* using the `dequeue` method, I use `assertEquals` to check if I was removing the right element and `assertArrayEquals` to check the resulting array. From my testing, my implementation works well. <br> Thanks again!!<br> I think it is also worth showing my output for running the test in following screenshot.<br>
 <img width="285" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/68e46582-5cca-4ec4-9e7e-e9112d75393d"><br> And here is my code within the `test.sh` file 
+
 ```
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore myQueueTest
 ```
+
 **Some details that *may* be left out in response**
 1. The file & directory structure needed <br>
 ```
@@ -184,7 +187,8 @@ public class myQueue{
 }
 ```
 
-3. The full command line (or lines) you ran to trigger the bug 
+3. The full command line (or lines) you ran to trigger the bug
+
 ```
 public int dequeue(){
         return this.queue.get(capacity - 1);
