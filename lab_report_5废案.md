@@ -24,5 +24,5 @@ Hi! You are on the right track in identifying the issue in your `reverseOrder` m
 And here is the leading question for you to consider: When you do the swap, you need to consider exactly which elements in the list you are swapping<br>
 As suggestion, try to initialize your code using `ArrayList` and `add` method to add some element in your list. Then, perform your `reverseOrder` method on this list to see how the elements are really swapping in your code.<br><br>
 
->
+>Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
 **Student**
