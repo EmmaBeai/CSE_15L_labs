@@ -92,6 +92,8 @@ And I think I can also trying to define the errors existing earlier with answeri
 2. Thank you for pointing out that my understanding for the `dequeue` method is wrong, instead of removing the last element from the queue, `dequeue` actually intended for the *first in first out* policy, so it should return the element at index 0. To avoid the `IndexOutOfBounds` exception this time, I choose to let the method `return -1` to indicate an error when there is no element in the list.
 3. Your third question was inspiring, too. I noticed that I cannot only use the `get` method from the imported `java.util.ArrayList` to find the element I want. After finding the intended element, I need to remove it from the list and decrease the size of the list. Then it is the time I need to return the right element.
 <br> I also followed your suggestions to write a `JUnit` test to test my output instead of doing it in the `main` method.<br> Here is the code for testing: <br>
+
+
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -112,6 +114,7 @@ public class myQueueTest{
     }
 }
 ```
+
 
 <br> In the above test, I first tested again to make sure the `enqueue` method works well so that I have three elements in the list to start with (in this case, they are 1, 2, and 3). And I start to remove the *1* and *2* using the `dequeue` method, I use `assertEquals` to check if I was removing the right element and `assertArrayEquals` to check the resulting array. From my testing, my implementation works well. <br> Thanks again!!<br> I think it is also worth showing my output for running the test in following screenshot.<br>
 <img width="285" alt="image" src="https://github.com/EmmaBeai/cse15l-lab-reports/assets/129473980/68e46582-5cca-4ec4-9e7e-e9112d75393d"><br> And here is my code within the `test.sh` file 
